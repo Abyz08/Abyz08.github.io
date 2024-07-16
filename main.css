@@ -1,9 +1,16 @@
 
 body {
-    font-family: "Orbitron", sans-serif;
+    @font-face {
+  font-family: JSans;
+  src: url(JosefinSans-Bold.ttf);
+}
+
+div {
+  font-family: JSans;
+}
 }
 
 div {
   
-  font-family: "Orbitron", sans-serif;
+  font-family: JSans;
 }
