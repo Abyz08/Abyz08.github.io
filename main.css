@@ -1,12 +1,9 @@
 
 body {
-  font-family: BaseFont, src: url(JosefinSans-Bold);
+    font-family: "Orbitron", sans-serif;
 }
 
 div {
-  font-family: BaseFont;
-}
-
-div {
-   font-family: BaseFont;
+  
+  font-family: "Orbitron", sans-serif;
 }
