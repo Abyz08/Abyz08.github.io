@@ -1,8 +1,6 @@
 
 body {
-   @font-face {
-  font-family: BaseFont;
-  src: url(JosefinSans-Bold);
+  font-family: BaseFont, src: url(JosefinSans-Bold);
 }
 
 div {
