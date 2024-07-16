@@ -1,12 +1,10 @@
 
 body {
-  @font-face {
-  font-family: myFirstFont;
-  src: url(JosefinSans-Bold.ttf);
+   font-family: "Orbitron", sans-serif;
 }
 
 div {
-  font-family: myFirstFont;
+   font-family: "Orbitron", sans-serif;
 }
   bolder;
 }
