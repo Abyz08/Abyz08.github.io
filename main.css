@@ -2,7 +2,7 @@
 body {
     @font-face {
   font-family: JSans;
-  src: url(JosefinSans-Bold.ttf);
+  src: JosefinSans-Bold.ttf;
 }
 
 div {
