@@ -1,16 +1,16 @@
 
 body {
     @font-face {
-  font-family: JSans;
-  src: JosefinSans-Bold.ttf;
+  font-family: Unbounded;
+  src: url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');;
 }
 
 div {
-  font-family: JSans;
+  font-family: Unbounded;
 }
 }
 
 div {
   
-  font-family: JSans;
+  font-family: Unbounded;
 }
