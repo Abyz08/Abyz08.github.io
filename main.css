@@ -1,8 +1,8 @@
-
-body {
-    @font-face {
+@font-face {
   font-family: Unbounded;
-  src: url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');;
+  src: url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
+}
+body {
 }
 
 div {
