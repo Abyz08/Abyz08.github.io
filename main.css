@@ -2,13 +2,15 @@
   font-family: Unbounded;
   src: url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
 }
-body {
+
+head {
+  font-family: Unbounded;
 }
 
 div {
   font-family: Unbounded;
 }
-}
+
 
 div {
   
