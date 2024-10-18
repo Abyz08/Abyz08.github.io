@@ -13,7 +13,21 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
+.bg-error {
+  width: 150%;
+  height: 150%;
+  margin-top: -20px;
+  margin-left: -20px;
+  position: fixed;
+  background-color: #eee;
+  background-size: 30px 30px;
+  background-image: url("404error.png");
+  background-repeat: repeat;
+  animation-name: bg-scroll;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 .bg-circle {
     margin-top: -12.5%;
     margin-left: -12.5%;
@@ -59,7 +73,7 @@ html, span {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: fit-content;
   height: auto;
   border: 1px solid #eee;
   border-radius: 4px;
@@ -212,12 +226,12 @@ html, span {
 
   }
 
-  .fake-window-fit-experience{
-    margin-top: -60px;
+  .fake-window-fit-404{
+    margin-top: 40px;
     margin-left: auto;
-    margin-right: 80px;
-    width: fit-content ;
-    height: 20%;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
     border: 1px solid #eee;
     border-radius: 4px;
     box-shadow: 0 2px;
@@ -259,6 +273,72 @@ html, span {
   
     .fake-window-body {
       padding: 10px;
-  
+      
+      span {
+        height: fit-content;
+        
+        h1 {
+            font-size: 100px;
+            text-align: center;
+            margin-top: -10px;
+          }
+        p {
+          margin-top: -80px;
+          text-align: center;
+        }
+      }
   
     }
+
+
+
+.fake-window-fit-experience {
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: 80px;
+  width: fit-content;
+  height: 20%;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 2px;
+  background-color: #eee;
+  background-image: url('view-above-the-clouds_800.jpg');
+
+  .fake-window-header {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+
+    span {
+      margin-left: -35px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      background-color: white;
+      width: 80%;
+      height: auto;
+      border: 1px
+    }
+
+
+    .close-btn {
+      button {
+        width: 100px;
+        height: 100px;
+        margin-left: -40px;
+        margin-top: 3px;
+        background-image: url('close.png');
+        border: 0px;
+        transform: scale(0.13, 0.13)
+      }
+    }
+
+
+  }
+}
+
+.fake-window-body {
+  padding: 10px;
+
+
+}
