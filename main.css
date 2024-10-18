@@ -18,8 +18,8 @@
 .bg-circle {
     margin-top: 12.5%;
     margin-left: 12.5%;
-    height: 75%;
-    width: 75%;
+    height: 120%
+    width: same-as-height;
     border: 1px solid black;
     border-radius: 50%;
     display: inline-block;
@@ -28,8 +28,8 @@
 
 .bg-cross{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 120%;
+    height: same-as-width;
 }
 
 .bg-cross:before {
