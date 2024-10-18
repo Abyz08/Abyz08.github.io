@@ -13,9 +13,10 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .bg-error {
-  width: 150%;
-  height: 150%;
+  width: 250%;
+  height: 250%;
   margin-top: -20px;
   margin-left: -20px;
   position: fixed;
@@ -28,15 +29,39 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .bg-circle {
     margin-top: -12.5%;
     margin-left: -12.5%;
     height: 135%;
     aspect-ratio: 1 / 1;
-    border: 1px solid black;
+    border: 5px solid black;
     border-radius: 50%;
     display: inline-block;
     position: fixed;
+}
+
+.bg-halftone {
+  --stop1: 0.06rem;
+  --stop2: 0.65rem;
+  --dotSize: 0.25rem;
+  --bgSize: 1.35rem;
+  --bgPosition: calc(var(--bgSize) / 2);
+  
+}
+.bg-halftone::after {
+  content: '';
+  position: fixed;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  
+  background-image: radial-gradient(circle at center,
+      #409078 var(--dotSize),
+      transparent 0);
+  background-size: 1.3rem 1.3rem;
+  mask-image: radial-gradient(ellipse at bottom right, rgb(0 0 0), rgb(255 255 255 / 0) 50%, rgb(255 255 255 / 0) );
 }
 
 
@@ -80,6 +105,10 @@ html, span {
 .container-404 {
   filter: drop-shadow(10px 10px #00000046) drop-shadow(1px -1px 0rem black) drop-shadow(-1px -1px 0rem black) drop-shadow(1px 1px 0rem black) drop-shadow(-1px 1px 0rem black) drop-shadow(1rem 1rem 10px #ff2222a0);
 }
+.container-coding-sillygame{
+  filter: drop-shadow(10px 10px #00000046) drop-shadow(1px -1px 0rem black) drop-shadow(-1px -1px 0rem black) drop-shadow(1px 1px 0rem black) drop-shadow(-1px 1px 0rem black) drop-shadow(1rem 1rem 10px #c0ffe8a0);
+}
+
 .container-title {
   filter: drop-shadow(10px 10px #00000046) drop-shadow(1px -1px 0rem black) drop-shadow(-1px -1px 0rem black) drop-shadow(1px 1px 0rem black) drop-shadow(-1px 1px 0rem black) drop-shadow(1rem 1rem 10px #c0ffe8a0);
 }
@@ -359,12 +388,13 @@ html, span {
 
 
 
-.fake-window-fit-experience {
-  margin-top: -60px;
+
+.fake-window-fit-coding-sillygame {
+  margin-top: 60px;
   margin-left: auto;
-  margin-right: 80px;
+  margin-right: 12.5%;
   width: fit-content;
-  height: 20%;
+  height: 50%;
   border: 1px solid #eee;
   border-radius: 4px;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
@@ -408,6 +438,67 @@ html, span {
           box-shadow: 0px 3px 0 0 #00000034;
           background-color: #bbbbbb;
         }
+
+
+  }
+}
+
+.fake-window-body {
+  padding: 10px;
+
+
+}
+
+.fake-window-fit-experience {
+  margin-top: -60px;
+  margin-left: auto;
+  margin-right: 80px;
+  width: fit-content;
+  height: 20%;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
+  background-color: #eee;
+  background-image: url('view-above-the-clouds_800.jpg');
+
+  .fake-window-header {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+
+    span {
+      margin-left: -35px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      background-color: white;
+      width: 80%;
+      height: auto;
+      border: 1px
+    }
+
+
+    .close-btn {
+      button {
+        width: 100px;
+        height: 100px;
+        margin-left: -40px;
+        margin-top: 3px;
+        background-image: url('close.png');
+        border: 0px;
+        transform: scale(0.13, 0.13)
+      }
+    }
+
+    .fold {
+      width: 15%;
+      height: 20px;
+      margin-right: -5%;
+      margin-top: -5px;
+      box-shadow: 0px 3px 0 0 #00000034;
+      background-color: #bbbbbb;
+    }
 
 
   }
