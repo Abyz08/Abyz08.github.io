@@ -1,7 +1,7 @@
 .bg-scrolling {
-  width: 1000px;
+  width: 2000px;
   margin-top: -20px;
-  height: 1000px;
+  height: 2000px;
   position: fixed;
   background-color: #eee;
   background-size: 60px 60px;
