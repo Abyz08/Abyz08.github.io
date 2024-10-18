@@ -1,7 +1,8 @@
 .bg-scrolling {
-  width: 6000px;
+  width: 1000px;
   margin-top: -20px;
-  height: 4000px;
+  height: 1000px;
+  position: fixed;
   background-color: #eee;
   background-size: 60px 60px;
   background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
