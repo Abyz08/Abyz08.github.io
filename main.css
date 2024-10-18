@@ -162,3 +162,52 @@ span {
 
 
   }
+
+.fake-window-fit-right-high{
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: -40px;
+  width: fit-content ;
+  height: auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 2px;
+  background-color: #eee;
+  background-image: url('view-above-the-clouds_800.jpg');
+
+  .fake-window-header {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    span {
+      margin-left: -35px;
+      background-color: white;
+      width: 80%;
+      height: auto;
+      border: 1px
+      
+    }
+
+
+    .close-btn {
+      button {
+        width: 100px;
+        height: 100px;
+        margin-left: -40px;
+        margin-top: 3px;
+        background-image: url('close.png');
+        border: 0px;
+      transform: scale(0.13, 0.13)
+      }
+      }
+      
+      
+    }
+  }
+
+  .fake-window-body {
+    padding: 10px;
+
+
+  }
