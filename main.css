@@ -57,8 +57,7 @@ html, span {
 
 .fake-window-fit-title{
   margin-top: 20px;
-  margin-left: 40px;
-  margin-right: auto;
+  align: centre
   width: 30%;
   height: auto;
   border: 1px solid #eee;
