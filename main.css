@@ -7,8 +7,9 @@
   background-repeat: repeat;
   
   animation-name: bg-scroll;
-  animation-duration: 4s;
+  animation-duration: 16s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 
@@ -16,9 +17,17 @@
   0% {
     transform: translate3d(0, 0, 0);
   }
-  
+  25% {
+    transform: translate3d(200px, 0, 0);
+  }
+  50% {
+    transform: translate3d(200px, 200px, 0);
+  }
+  75% {
+    transform: translate3d(0, 200px, 0);
+  }
   100% {
-    transform: translate3d(-200px, 0, 0);
+    transform: translate3d(0, 0, 0);
     /* The image width */
   }
 }
