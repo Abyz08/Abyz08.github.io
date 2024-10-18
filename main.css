@@ -34,14 +34,12 @@
   100% {
     transform: translate3d(-240px, -240px, 0);
   }
-    /* The image width */
-  }
 }
 
 
 
 
-span {
+html, span {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px
 }
