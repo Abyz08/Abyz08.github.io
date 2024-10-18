@@ -69,23 +69,55 @@ html, span {
   bottom: 0;
 }
 
+.container {
+  filter: drop-shadow(10px 10px #00000046)
+  drop-shadow(1px -1px 0rem black) 
+  drop-shadow(-1px -1px 0rem black) 
+  drop-shadow(1px 1px 0rem black) 
+  drop-shadow(-1px 1px 0rem black)
+  drop-shadow(1rem 1rem 10px  #c0ffe8a0);
+}
+.container-404 {
+  filter: drop-shadow(10px 10px #00000046) drop-shadow(1px -1px 0rem black) drop-shadow(-1px -1px 0rem black) drop-shadow(1px 1px 0rem black) drop-shadow(-1px 1px 0rem black) drop-shadow(1rem 1rem 10px #ff2222a0);
+}
+.container-title {
+  filter: drop-shadow(10px 10px #00000046) drop-shadow(1px -1px 0rem black) drop-shadow(-1px -1px 0rem black) drop-shadow(1px 1px 0rem black) drop-shadow(-1px 1px 0rem black) drop-shadow(1rem 1rem 10px #c0ffe8a0);
+}
+
+.container-sillygame {
+  filter: drop-shadow(10px 10px #00000046) drop-shadow(1px -1px 0rem black) drop-shadow(-1px -1px 0rem black) drop-shadow(1px 1px 0rem black) drop-shadow(-1px 1px 0rem black) drop-shadow(1rem 1rem 10px #c0ffe8a0);
+}
+.container-experience {
+  filter: drop-shadow(10px 10px #00000046) drop-shadow(1px -1px 0rem black) drop-shadow(-1px -1px 0rem black) drop-shadow(1px 1px 0rem black) drop-shadow(-1px 1px 0rem black) drop-shadow(1rem 1rem 10px #c0ffe8a0);
+}
+.container-contactme {
+  filter: drop-shadow(10px 10px #00000046) drop-shadow(1px -1px 0rem black) drop-shadow(-1px -1px 0rem black) drop-shadow(1px 1px 0rem black) drop-shadow(-1px 1px 0rem black) drop-shadow(1rem 1rem 10px #c0ffe8a0);
+}
+
+
+
+
+
 .fake-window-fit-title{
+  border: 1px solid #eee;
+  border-radius: 1px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
   height: auto;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  box-shadow: 0 2px;
+  
   background-color: #eee;
-  background-image: url('view-above-the-clouds_800.jpg');
+  
 
   .fake-window-header {
     height: 20px;
     display: flex;
     align-items: center;
     background-color: #ddd;
+    width: 100%;
     span {
       margin-left: -35px;
       margin-top: 2px;
@@ -110,19 +142,30 @@ html, span {
       }
       }
       
+        .fold {
+          width: 30px;
+          height: 20px;
+          margin-right: -10%;
+          margin-top: 0px;
+          box-shadow: 0px 3px 0 0 #00000034;
+          background-color: #bbbbbb;
+        }
       
     }
   }
 
   .fake-window-body {
+    background-image: url('view-above-the-clouds_800.jpg');
     padding: 10px;
     h1 {
       font-family: Arial, Helvetica, sans-serif;
       text-align: centre;
       font-size: 40px;
     }
-
   }
+
+
+
 
 .fake-window-fit-sillygame{
   margin-top: 20px;
@@ -132,8 +175,10 @@ html, span {
   height: auto;
   border: 1px solid #eee;
   border-radius: 4px;
-  box-shadow: 0 2px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
   background-color: #eee;
+  
   background-image: url('view-above-the-clouds_800.jpg');
 
   .fake-window-header {
@@ -163,8 +208,15 @@ html, span {
         border: 0px;
       transform: scale(0.13, 0.13)
       }
-      }
-      
+    }
+        .fold {
+              width: 30px;
+              height: 20px;
+              margin-right: -10%;
+              margin-top: 0px;
+              box-shadow: 0px 3px 0 0 #00000034;
+              background-color: #bbbbbb;
+            }
       
     }
   }
@@ -183,7 +235,8 @@ html, span {
   height: 20%;
   border: 1px solid #eee;
   border-radius: 4px;
-  box-shadow: 0 2px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
   background-color: #eee;
   background-image: url('view-above-the-clouds_800.jpg');
 
@@ -216,7 +269,14 @@ html, span {
       }
       }
       
-      
+            .fold {
+              width: 30px;
+              height: 20px;
+              margin-right: -10%;
+              margin-top: -7px;
+              box-shadow: 0px 3px 0 0 #00000034;
+              background-color: #bbbbbb;
+            }
     }
   }
 
@@ -234,7 +294,6 @@ html, span {
     height: 50%;
     border: 1px solid #eee;
     border-radius: 4px;
-    box-shadow: 0 2px;
     background-color: #eee;
     background-image: url('view-above-the-clouds_800.jpg');
   
@@ -267,6 +326,14 @@ html, span {
         }
         }
         
+                .fold {
+                  width: 30px;
+                  height: 20px;
+                  margin-right: -10%;
+                  margin-top: 0px;
+                  box-shadow: 0px 3px 0 0 #00000034;
+                  background-color: #bbbbbb;
+                }
         
       }
     }
@@ -300,7 +367,8 @@ html, span {
   height: 20%;
   border: 1px solid #eee;
   border-radius: 4px;
-  box-shadow: 0 2px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
   background-color: #eee;
   background-image: url('view-above-the-clouds_800.jpg');
 
@@ -332,6 +400,14 @@ html, span {
         transform: scale(0.13, 0.13)
       }
     }
+        .fold {
+          width: 15%;
+          height: 20px;
+          margin-right: -5%;
+          margin-top: -5px;
+          box-shadow: 0px 3px 0 0 #00000034;
+          background-color: #bbbbbb;
+        }
 
 
   }
