@@ -35,7 +35,7 @@ span {
   font-size: 12px
 }
 
-/*<uniquifier>: Use a unique and descriptive class name*/
+<uniquifier>: Use a unique and descriptive class name
 
 .unbounded-<uniquifier> {
   font-family: "Unbounded", sans-serif;
