@@ -3,7 +3,8 @@
   margin-top: -20px;
   height: 4000px;
   background-color: #eee;
-  background-image: url('IMG_2240.jpeg');
+  background-size: 60px 60px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
   background-repeat: repeat;
   
   animation-name: bg-scroll;
