@@ -103,8 +103,9 @@ html, span {
   .fake-window-body {
     padding: 10px;
     h1 {
-      font-family: Unbounded;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: centre;
+      font-size: 40px;
     }
 
   }
