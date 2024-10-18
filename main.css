@@ -1,6 +1,6 @@
 .bg-scrolling {
-  width: 120%;
-  height: 130%;
+  width: 150%;
+  height: 150%;
   margin-top: -20px;
   margin-left: -20px;
   position: fixed;
@@ -13,6 +13,17 @@
   animation-duration: 16s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.bg-circle {
+    margin-top: 12.5%;
+    margin-left: 12.5%;
+    height: 75%;
+    width: 75%;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    position: fixed;
 }
 
 
@@ -36,25 +47,14 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
-h1 {
-  font-family: Unbounded;
-  text-align: centre;
-}
+
 
 span {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px
 }
 
-<uniquifier>: Use a unique and descriptive class name
 
-.unbounded-<uniquifier> {
-  font-family: "Unbounded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
 
 
 .content {
@@ -65,11 +65,12 @@ span {
   bottom: 0;
 }
 
-.fake-window-fit{
+.fake-window-fit-title{
+  font-size: 40px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: fit-content ;
+  width: 45%;
   height: auto;
   border: 1px solid #eee;
   border-radius: 4px;
@@ -110,15 +111,18 @@ span {
 
   .fake-window-body {
     padding: 10px;
-
+    h1 {
+      font-family: Unbounded;
+      text-align: centre;
+    }
 
   }
 
-.fake-window-fit-left{
+.fake-window-fit-sillygame{
   margin-top: 20px;
   margin-left: 40px;
   margin-right: auto;
-  width: fit-content ;
+  width: 30%;
   height: auto;
   border: 1px solid #eee;
   border-radius: 4px;
@@ -163,12 +167,12 @@ span {
 
   }
 
-.fake-window-fit-right-high{
-  margin-top: -60px;
-  margin-left: auto;
-  margin-right: 80px;
-  width: fit-content ;
-  height: auto;
+.fake-window-fit-contactme{
+  margin-top: 0px;
+  margin-left: 30%;
+  margin-right: auto;
+  width: fit-content;
+  height: 20%;
   border: 1px solid #eee;
   border-radius: 4px;
   box-shadow: 0 2px;
@@ -211,3 +215,53 @@ span {
 
 
   }
+
+  .fake-window-fit-experience{
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: 80px;
+    width: fit-content ;
+    height: 20%;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 2px;
+    background-color: #eee;
+    background-image: url('view-above-the-clouds_800.jpg');
+  
+    .fake-window-header {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      background-color: #ddd;
+      span {
+        margin-left: -35px;
+        background-color: white;
+        width: 80%;
+        height: auto;
+        border: 1px
+        
+      }
+  
+  
+      .close-btn {
+        button {
+          width: 100px;
+          height: 100px;
+          margin-left: -40px;
+          margin-top: 3px;
+          background-image: url('close.png');
+          border: 0px;
+        transform: scale(0.13, 0.13)
+        }
+        }
+        
+        
+      }
+    }
+  
+    .fake-window-body {
+      padding: 10px;
+  
+  
+    }
+  
