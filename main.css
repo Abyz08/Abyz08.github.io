@@ -166,7 +166,7 @@ span {
 .fake-window-fit-right-high{
   margin-top: -20px;
   margin-left: auto;
-  margin-right: -40px;
+  margin-right: 40px;
   width: fit-content ;
   height: auto;
   border: 1px solid #eee;
