@@ -1,16 +1,41 @@
-html {
-  background-image: url(IMG_1970.jpeg);
-  transform: scale(3, 3)
+.bg-scrolling {
+  width: 6000px;
+  margin-top: -20px;
+  height: 4000px;
+  background-color: #eee;
+  background-image: url('IMG_2240.jpeg');
+  background-repeat: repeat;
+  
+  animation-name: bg-scroll;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
+
+
+@keyframes bg-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  100% {
+    transform: translate3d(-200px, 0, 0);
+    /* The image width */
+  }
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
 h1 {
   font-family: Unbounded;
-  src: ;
   text-align: centre;
 }
 
-// <uniquifier>: Use a unique and descriptive class name
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px
+}
+
+/*<uniquifier>: Use a unique and descriptive class name*/
 
 .unbounded-<uniquifier> {
   font-family: "Unbounded", sans-serif;
@@ -18,3 +43,99 @@ h1 {
   font-weight: 900;
   font-style: normal;
 }
+
+.fake-window{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 400px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 2px;
+  background-color: #eee;
+  background-image: url('view-above-the-clouds_800.jpg');
+  .fake-window-header
+  {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    
+
+    .close-btn {
+      button {
+          width: 100px;
+          height: 100px;
+          margin-left: -40px;
+          display: flex;
+          border-radius: 0%;
+          background-color: red;
+          background-image: url('close.png');
+          transform: scale(0.1, 0.1)
+        }
+      }
+    }
+  }
+  .fake-window-body{
+    padding: 10px;
+    
+
+  }
+
+.content {
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.fake-window-fit{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content ;
+  height: auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 2px;
+  background-color: #eee;
+  background-image: url('view-above-the-clouds_800.jpg');
+
+  .fake-window-header {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    span {
+      margin-left: -35px;
+      background-color: white;
+      width: 80%;
+      height: auto;
+      border: 1px
+      
+    }
+
+
+    .close-btn {
+      button {
+        width: 100px;
+        height: 100px;
+        margin-left: -40px;
+        margin-top: 3px;
+        background-image: url('close.png');
+        border: 0px;
+      transform: scale(0.13, 0.13)
+      }
+      }
+      
+      
+    }
+  }
+
+  .fake-window-body {
+    padding: 10px;
+
+
+  }
