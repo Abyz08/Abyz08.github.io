@@ -79,7 +79,7 @@ span {
       margin-left: -35px;
       background-color: white;
       width: 80%;
-      height: auto;
+      height: fit-content;
       border: 1px
       
     }
