@@ -19,7 +19,7 @@
     margin-top: -10%;
     margin-left: -10%;
     height:120%
-    width: same-as-height;
+    aspect-ratio: 1 / 1;
     border: 1px solid black;
     border-radius: 50%;
     display: inline-block;
