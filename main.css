@@ -16,8 +16,8 @@
 }
 
 .bg-circle {
-    margin-top: 12.5%;
-    margin-left: 12.5%;
+    margin-top: auto;
+    margin-left: auto;
     height: 120%
     width: same-as-height;
     border: 1px solid black;
