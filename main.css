@@ -1,8 +1,8 @@
 .bg-scrolling {
   width: 150%;
   height: 150%;
-  margin-top: -20px;
-  margin-left: -20px;
+  margin-top: -10%;
+  margin-left: -10%;
   position: fixed;
   background-color: #eee;
   background-size: 60px 60px;
@@ -21,8 +21,8 @@
   margin-left: -20px;
   position: fixed;
   background-color: #eee;
-  background-size: 30px 30px;
-  background-image: url("404error.png");
+  background-size: 90px 90px;
+  background-image: linear-gradient(to left, grey 4px, transparent 1px), linear-gradient(to top, grey 4px, transparent 1px);
   background-repeat: repeat;
   animation-name: bg-scroll;
   animation-duration: 16s;
@@ -70,6 +70,16 @@
   0% {
     transform: translate3d(0, 0, 0);
   }
+  100% {
+    transform: translate3d(-240px, -240px, 0);
+  }
+}
+
+@keyframes bg-scroll-load {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
   100% {
     transform: translate3d(-240px, -240px, 0);
   }
@@ -125,6 +135,24 @@ html, span {
 
 
 
+.fake-window-fit-title:has(.fake-window-body:hover) {
+  background: #00bb00;
+}
+.fake-window-fit-404:has(.fake-window-body:hover) {
+  background: #00bb00;
+}
+.fake-window-fit-contactme:has(.fake-window-body:hover) {
+  background: #00bb00;
+}
+.fake-window-fit-experience:has(.fake-window-body:hover) {
+  background: #00bb00;
+}
+.fake-window-fit-coding-sillygame:has(.fake-window-body:hover) {
+  background: #00bb00;
+}
+.fake-window-fit-sillygame:has(.fake-window-body:hover) {
+  background: #00bb00;
+}
 
 
 .fake-window-fit-title{
@@ -137,10 +165,9 @@ html, span {
   margin-right: auto;
   width: fit-content;
   height: auto;
+  background-color: #bb2222;
   
-  background-color: #eee;
   
-
   .fake-window-header {
     height: 20px;
     display: flex;
@@ -176,7 +203,6 @@ html, span {
           height: 20px;
           margin-right: -10%;
           margin-top: 0px;
-          box-shadow: 0px 3px 0 0 #00000034;
           background-color: #bbbbbb;
         }
       
@@ -185,6 +211,7 @@ html, span {
 
   .fake-window-body {
     background-image: url('view-above-the-clouds_800.jpg');
+    opacity: 75%;
     padding: 10px;
     h1 {
       font-family: Arial, Helvetica, sans-serif;
@@ -206,9 +233,7 @@ html, span {
   border-radius: 4px;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
-  background-color: #eee;
-  
-  background-image: url('view-above-the-clouds_800.jpg');
+  background-color: #bb2222;
 
   .fake-window-header {
     height: 20px;
@@ -243,7 +268,7 @@ html, span {
               height: 20px;
               margin-right: -10%;
               margin-top: 0px;
-              box-shadow: 0px 3px 0 0 #00000034;
+;
               background-color: #bbbbbb;
             }
       
@@ -264,10 +289,9 @@ html, span {
   height: 20%;
   border: 1px solid #eee;
   border-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
-  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
-  background-color: #eee;
-  background-image: url('view-above-the-clouds_800.jpg');
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 92.5% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 92.5% 0);
+  background-color: #bb2222;
 
   .fake-window-header {
     height: 20px;
@@ -300,10 +324,9 @@ html, span {
       
             .fold {
               width: 30px;
-              height: 20px;
+              height: 27px;
               margin-right: -10%;
               margin-top: -7px;
-              box-shadow: 0px 3px 0 0 #00000034;
               background-color: #bbbbbb;
             }
     }
@@ -315,7 +338,7 @@ html, span {
 
   }
 
-  .fake-window-fit-404{
+.fake-window-fit-404{
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -323,9 +346,9 @@ html, span {
     height: 50%;
     border: 1px solid #eee;
     border-radius: 4px;
-    background-color: #eee;
-    background-image: url('view-above-the-clouds_800.jpg');
-  
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 92.5% 0);
+    background-color: #bb2222;
     .fake-window-header {
       height: 20px;
       display: flex;
@@ -358,16 +381,16 @@ html, span {
                 .fold {
                   width: 30px;
                   height: 20px;
-                  margin-right: -10%;
+                  margin-left: 15%;
+                  margin-right: auto;
                   margin-top: 0px;
-                  box-shadow: 0px 3px 0 0 #00000034;
                   background-color: #bbbbbb;
                 }
         
       }
     }
   
-    .fake-window-body {
+  .fake-window-body {
       padding: 10px;
       
       span {
@@ -397,10 +420,9 @@ html, span {
   height: 50%;
   border: 1px solid #eee;
   border-radius: 4px;
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
-  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
-  background-color: #eee;
-  background-image: url('view-above-the-clouds_800.jpg');
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 12%, 90% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 12%, 90% 0);
+  background-color: #bb2222;
 
   .fake-window-header {
     height: 20px;
@@ -432,10 +454,9 @@ html, span {
     }
         .fold {
           width: 15%;
-          height: 20px;
+          height: 22px;
           margin-right: -5%;
           margin-top: -5px;
-          box-shadow: 0px 3px 0 0 #00000034;
           background-color: #bbbbbb;
         }
 
@@ -459,8 +480,7 @@ html, span {
   border-radius: 4px;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 90% 0);
-  background-color: #eee;
-  background-image: url('view-above-the-clouds_800.jpg');
+  background-color: #bb2222;
 
   .fake-window-header {
     height: 20px;
@@ -493,10 +513,9 @@ html, span {
 
     .fold {
       width: 15%;
-      height: 20px;
+      height: 23px;
       margin-right: -5%;
       margin-top: -5px;
-      box-shadow: 0px 3px 0 0 #00000034;
       background-color: #bbbbbb;
     }
 
