@@ -214,6 +214,7 @@ html, span {
     opacity: 75%;
     padding: 10px;
     h1 {
+      @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
       // <uniquifier>: Use a unique and descriptive class nam
       .unbounded-<uniquifier> {
       font-family: "Unbounded", sans-serif;
