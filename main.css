@@ -213,15 +213,12 @@ html, span {
     background-image: url('view-above-the-clouds_800.jpg');
     opacity: 75%;
     padding: 10px;
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
     h1 {
-      @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap');
-      // <uniquifier>: Use a unique and descriptive class nam
-      .unbounded-<uniquifier> {
       font-family: "Unbounded", sans-serif;
       font-optical-sizing: auto;
       font-weight: 900;
       font-style: normal;
-}
       text-align: centre;
       font-size: 40px;
     }
