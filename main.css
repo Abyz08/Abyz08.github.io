@@ -1,5 +1,9 @@
+
+
+
 :root {
   color: white;
+  
 }
 
 .bg-scrolling {
@@ -37,23 +41,30 @@
 
 
 .bg-cross {
+  transform: rotate(0deg);
   width: 200%;
-    height: 200%;
-    margin-left: -49%;
-    margin-top: -49%;
-    position: fixed;
-    background-color: #000000;
-    background-size: 60px 60px;
-    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
-    background-repeat: repeat;
+  height: 200%;
+  margin-left: -75%;
+  margin-top: -75%;
+  position: fixed;
+  background-color: #000000;
+  background-size: 60px 60px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+  background-repeat: repeat;
   
-    animation-name: bg-scroll-rev;
-    animation-duration: 16s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  animation-name: bg-scroll-rev;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 
-    mask-image: url("close.png");
-    mask-size: 100% 100%;
+  mask-image: url("close.png");
+  mask-size: cover;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.bg-cross:hover{
+  transform: rotate(45deg);
 }
 
 .bg-circle {
@@ -126,7 +137,9 @@ html, span {
   bottom: 0;
 }
 
+@import url('//fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
 .pagetitle {
+  
   font-family: "Unbounded", serif;
   font-optical-sizing: auto;
   font-size: 50px;
@@ -161,8 +174,10 @@ html, span {
   position: absolute;
   background-image: url("IMG_1970.jpeg");
   background-size: 100% 100%;
-  height: 100%;
-  width: 100%;
+  margin-left: -5%;
+  margin-top: -5%;
+  height: 120%;
+  width: 120%;
   filter: brightness(1) contrast(1) invert(0) saturate(1);
   transition-property: filter;
   transition-duration: 1s;
@@ -170,4 +185,10 @@ html, span {
 
 .redirector:hover {
   filter: brightness(3) contrast(3) invert(1) saturate(0.8);
+}
+
+.strange-version-number {
+  font-size: 10px;
+  position: fixed;
+  margin-top: calc(100% - 10px);
 }
