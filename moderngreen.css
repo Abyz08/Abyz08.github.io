@@ -1,0 +1,181 @@
+
+:root {
+    --coolgradient: linear-gradient(45deg, green, #005a32, #003300);
+    --blackcolortest: black;
+}
+
+@keyframes bgnorotate {
+    0% {
+        background-position: 100% 100%;
+    }
+
+    12.5% {
+        background-position: 50% 50%;
+    }
+
+    25% {
+        background-position: 100% 100%;
+    }
+
+    37.5% {
+        background-position: 0% 100%;
+
+    }
+
+    50% {
+        background-position: 50% 0%;
+    }
+
+    62.5% {
+        background-position: 50% 50%;
+    }
+
+    75% {
+        background-position: 40% 0%;
+    }
+
+    87.5% {
+        background-position: 80% 80%;
+
+    }
+
+    100% {
+        background-position: 100%, 100%;
+    }
+}
+
+.blackground {
+    background-color: #000000;
+    position: absolute;
+    width: 109%;
+    height: 150%;
+    margin-left: -10%;
+    margin-top: -10%;
+}
+
+.pfp {
+    position: absolute;
+    background-image: url('OldPFP.jpg');
+    background-size: cover;
+    margin-left: calc(49% - 100px);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.pfpbg {
+        
+        background-image: var(--coolgradient);
+        background-size: 250%;
+        width: 220px;
+        height: 220px;
+        position: absolute;
+        margin-left: calc(49% - 110px);
+        margin-top: 10px;
+        animation-name: bgnorotate;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        border-radius: 50%
+
+    }
+
+.goback {
+    transform: rotate(180deg);
+    
+    background-image: var(--coolgradient);
+    position: absolute;
+    animation-name: bg;
+    background-size: 250%;
+    mask-image: url('close.png');
+    mask-size: contain;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    animation-name: bgnorotate;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-property: width height margin-left margin-top transform;
+    transition-duration: 0.75s;
+
+}
+
+.goback:hover {
+    width: 100px;
+    height: 100px;
+    margin-top: -15px;
+    margin-left: -15px;
+    transform: rotate(0deg);
+}
+
+
+@keyframes sizeup {
+    0% {
+        transform: rotate(180deg);
+
+    }
+    100% {
+        transform: rotate(90deg);
+        transform: scale(120%, 120%)
+    }
+}
+
+.aboutmebg {
+    width:fit-content;
+    position:absolute;
+    margin-left: calc(19% - 5px);
+    margin-top: calc(20px + 220px + 25px);
+    background-image: var(--coolgradient);
+    background-size: 250%;
+    border-radius: 12px;
+    height: fit-content;
+    width: calc(60% + 10px);
+    animation-name: bgnorotate;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    @import: url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+    .aboutme {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        border-radius: 12px;
+        width:auto;
+        color: aliceblue;
+        font-family: "Unbounded", serif;
+        font-optical-sizing: auto;
+        font-size: 15px;
+        font-style: normal;
+        background-color: #001000;
+        text-align: center;
+        
+    }
+}
+
+.spotifyprofilebg {
+    background-image: var(--coolgradient);
+    background-size: 250%;
+    border-radius: 12px;
+    position: absolute;
+    margin-left: calc(10% - 5px);
+    margin-top: calc(20px + 220px + 25px + 105px + 30px);
+    height: 162px;
+    width: calc(80% + 10px);
+    animation-name: bgnorotate;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.spotifyprofile {
+    border-radius: 12px;
+    position: absolute;
+    margin-left:10%;
+    margin-top: calc(20px + 220px + 30px + 105px + 30px);
+    height: 152px;
+    width: 80%;
+
+}
