@@ -1,3 +1,6 @@
+@import url('//fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap');
+
+
 
 :root {
     --coolgradient: linear-gradient(45deg, green, #005a32, #003300);
@@ -137,7 +140,6 @@
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-    @import url('//fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
     .aboutme {
         margin-left: 5px;
         margin-right: 5px;
