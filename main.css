@@ -33,6 +33,7 @@ body {
   width: 100vw;
   height: var(--logosize);
   position: fixed;
+  top:0;
   
 }
 .titlebar {
@@ -176,7 +177,7 @@ body {
 }
 
 .titleelement:hover {
-  background-color: rgb(255 255 255 / 0.2);
+  background-color: rgb(255 255 255 / 0.1);
   font-size: 25px;
 }
 
@@ -306,12 +307,12 @@ body {
     left:calc(50% - 55px);
     width:50px;
     height: 50px;
-    background-image: url("Spotify-logo.png");
+    background-image: url("Spotify_Primary_Logo_RGB_White-300x300.png");
     background-size: contain;
     background-repeat: no-repeat;
-    filter: brightness(1) invert(100%);
+    filter: brightness(1);
     transition-property: filter;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
   }
   .youtube {
     opacity:0;
@@ -326,7 +327,7 @@ body {
     background-repeat: no-repeat;
     filter: brightness(1);
     transition-property: filter;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
   }
   .caol {
     opacity:0;
@@ -336,7 +337,7 @@ body {
     width: 50px;
     height: 50px;
     background-image: url("IMG_1970.jpeg");
-    background-size:contain;
+    background-size:100% 100%;
     background-repeat: no-repeat;
     transition-property: transform, border-radius;
     transition-duration: 1s;
@@ -359,7 +360,7 @@ body {
   filter: brightness(0.5);
 }
 .spotify:hover{
-  filter: brightness(2);
+  filter: brightness(0.5);
 }
 
 .caol:active{
@@ -386,4 +387,73 @@ body {
   position:fixed;
   bottom: -1px;
   left: -1px;
+}
+
+  p {
+    color: white;
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 100px;
+    width:100%;
+    text-align: center;
+}
+
+  p > .number {
+    top: calc(50% - 100px);
+    display: inline-block;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+#little-box
+{
+  background-color: white;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0px;
+  left: 0px;
+}
+
+
+.gohome {
+  position:relative;
+  background-color: white;
+  color:white;
+  height: 50px;
+  width: 200px;
+  left:calc(50% - 100px);
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-size: 25px;
+  font-style: normal;
+  text-align: center;
+  margin: 12px;
+  padding: 14px 20px 14px 20px;
+  border-radius: 0.7em;
+  background: linear-gradient(225deg, #040,  rgb(0, 0, 0), rgb(0, 0, 0)) 0% 0% / 300% 600%;
+  background-size: 200% auto;
+  background-position: 0% 92%;
+  transition: background-position 1s ease;
+}
+
+.gohome:hover{
+  background-position: 100% 9%
+}
+p:hover > .number{
+  transition-duration: 1s;
+}
+
+p:hover > .number:nth-child(1) {
+  transform:translate(-8%, 20%) rotate(6deg);
+}
+p:hover > .number:nth-child(2) {
+  transform:translate(30%, -20%) rotate(20deg);
+}
+p:hover > .number:nth-child(3) {
+  transform:translate(30%, 20%) rotate(-15deg);
 }
