@@ -49,7 +49,7 @@ class particleSystem {
       // particles will spawn from there :)
       noFill();
       
-      let step = floor(max(width,height)/min(900,min(width,height)));
+      let step = floor(max(width,height)/min(160,min(width,height)));
       let i = 0;
       for (let x = 0; x < width; x += step) {
         for (let y = 0; y < height; y += step) {
