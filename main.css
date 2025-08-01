@@ -208,30 +208,22 @@ body {
     z-index: 0;
     transform: rotate(3deg);
   }
-  .hicard {
-    opacity:0;
-    animation: homeelements 1s cubic-bezier(0.6, -0.28, 0.735, 0.045)forwards;
-    position:relative;
-    background-image: url("Mainimg.png");
-    background-size:100% 100%;
-    background-repeat: no-repeat;
-    width:100vw;
-    height:300px;
-    .hicardtext {
+  .hicardtext {
       
       position:absolute;
       top:calc(50% - 30px);
-      left:calc(50vw - 150px);
-      color:black;
+      color:white;
       width: 100vw;
+      left:calc(50% - 200px);
       height:300px;
       font-family: "Unbounded", sans-serif;
       font-optical-sizing: auto;
       font-style: normal;
       font-weight: 900;
-      font-size: 60px;
+      font-size: 100px;
       width:fit-content;
       text-align: center;
+      filter:blur(10px);
       
     }
     
@@ -240,7 +232,7 @@ body {
       position:absolute;
       top:calc(50% + 30px);
       left:calc(50% - 148px);
-      color:black;
+      color:white;
       width: 60px;
       font-family: "Unbounded", sans-serif;
       font-optical-sizing: auto;
@@ -252,32 +244,17 @@ body {
     }
   }
 
-  .scrolldownpls {
-    opacity:0;
-    animation: homeelements 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.25s forwards;
-    
-    position: relative;
-    left:calc(50% - 15px);
-    width:30px;
-    height: 30px;
-    /*TODO: Replace with a webp blender render*/
-    background-image: url("downarrow.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 0;
-    transform: scale(500%);
-  }
+  
   .mainstuff {
     opacity:0;
     animation: homeelements 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s forwards;
     padding-top: 10px;
     position:relative;
-    background-color: black;
     color:white;
     width:100%;
     height: 200px;
     left:0%;
-    top:0%;
+    top:5000px;
     font-family: "Unbounded", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -344,8 +321,6 @@ body {
     border-radius: 100%;
     padding: 10px;
   }
-  
-}
 
 @keyframes homeelements {
   0% {
@@ -405,15 +380,7 @@ body {
     transition-duration: 0.5s;
     transition-property: transform;
 }
-#little-box
-{
-  background-color: white;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 0px;
-  left: 0px;
-}
+
 
 
 .gohome {
@@ -456,4 +423,9 @@ p:hover > .number:nth-child(2) {
 }
 p:hover > .number:nth-child(3) {
   transform:translate(30%, 20%) rotate(-15deg);
+}
+
+#title {
+  position: absolute;
+  top:calc(50% - 37.5%);
 }
